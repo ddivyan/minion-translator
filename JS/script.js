@@ -8,6 +8,11 @@ function getTranslationURL(txtInput){
     return serverURL + "?" + "text=" + txtInput;
 }
 
+    errorHandler=(error) => {
+        console.log("error occured", error)
+        alert("Something went wrong please try after sometime");
+    }
+
 function clickEventhandler(){
     var inputText = txtInput.value;
     fetch(getTranslationURL(inputText))
@@ -16,6 +21,9 @@ function clickEventhandler(){
         var translatedText = json.contents.translated
         ouputDiv.innerText = translatedText
     })
+    .catch( errorHandler)
+
+    
 }
 
 btnTransalte.addEventListener("click", clickEventhandler);
