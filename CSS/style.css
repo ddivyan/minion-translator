@@ -1,16 +1,75 @@
-.txt-area{
-    width: 80%;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    padding: 30px 5px;
+    background-color:#365314;
+}
+.navbar h1{
+text-align: center;
+color: chocolate;
+font-size: 2.5rem;
+}
+
+.firstSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 7.5px;
+    border-color: 5px solid black;
+    
+}
+
+.firstSection :hover{
+    background-color:#f2eda0 ;
+    transition: 0.s;
+}
+
+
+.firstSection .txt-area{
+    width: 50%;
     height: 60px;
     padding: 1rem 2rem;
+    text-align:center;
+    font-style: oblique;
+    font-size: 1.5rem;
+    order:1;
 
 }
 
 
+.firstSection .btn-translate{
+    background-color: chocolate;
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    position: relative;
+font-style: italic;
+    top: 15px;
+    left: 40px;
+    font-size: 10px ;
+    order: 2;
+}
+ .output{
+    margin: auto;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 2.0rem;
+    font-style: oblique;
+
+ }
+
+
+
 .output-div{
-    width: 80%;
+    width: 50%;
     border: 2px solid black;
-    height: 60px;
-    padding: 1rem 2rem;
-    
+    height: 50px;
+    padding: 2rem 10rem;
+    margin: auto;
+    border-radius: 7.5px;
 }
 
